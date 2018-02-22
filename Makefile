@@ -20,7 +20,7 @@ BINS = $(SRCS:.c=.o)
 all: $(NAME)
 
 $(NAME): $(BINS)
-	gcc -o $(NAME) $(BINS) $(FLAGS) $(FLAGS_MLX) $(LIB) libft/libft.a minilibx/libmlx.a
+	gcc -o $(NAME) $(BINS) $(FLAGS) $(FLAGS_MLX) libft/libft.a minilibx/libmlx.a
 
 %.o: %.c
 	gcc $(FLAGS) -c -o $@ $<
